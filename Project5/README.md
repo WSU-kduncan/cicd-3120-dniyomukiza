@@ -25,4 +25,4 @@ In order to build and run docker you must download a docker desktop software as 
      NOTE: Make sure your dockerfile specifies the source and destination of your web content. Using COPY command, **/usr/local/apache2/htdocs/** should be the root directory where you need to store your website files.
 
 
-  ![](/images/Untitled.PNG)
+  ![](/Project5/images/Untitled.png)
