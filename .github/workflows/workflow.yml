@@ -15,7 +15,6 @@ jobs:
       steps:
         - name: ckeck repo
         - uses: actions/checkout@v3
-       
         - name: Log to Dockerhub
           uses: docker/login-action@28218f9b04b4f3f62068d7b6ce6ca5b26e35336c
           with:
@@ -26,8 +25,5 @@ jobs:
         - name: Push to dockerhub
           run: docker push ${{ secrets.DOCKER_USERNAME }}/my_first_repo
         
-        - name: Thanks
-          run: echo Thank you for pushing to this repository
-        - name: Assure
-          run: We will publish changes you made after a review
+  
           
