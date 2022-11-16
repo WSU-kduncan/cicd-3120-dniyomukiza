@@ -2,7 +2,7 @@ name: Practice
 
 on:
 
-  push:
+  pull:
     branches: [main]
 
   workflow_dispatch:
@@ -22,5 +22,5 @@ jobs:
       
       - name: Say Goodbye
         run: |
-          echo Well done!.
-          echo GSee ya!
+          echo Well done!
+          echo See ya!
