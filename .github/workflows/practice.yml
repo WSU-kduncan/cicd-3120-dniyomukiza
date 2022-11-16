@@ -2,7 +2,7 @@ name: Practice
 
 on:
 
-  status:
+  delete:
     branches: [main]
 
   workflow_dispatch:
