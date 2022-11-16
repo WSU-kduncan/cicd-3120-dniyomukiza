@@ -1,3 +1,10 @@
+name: CL_push
+
+on:
+  push:
+    branches:
+      - "main"
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -21,4 +28,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/clockbox:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/my_first_repo:latest
