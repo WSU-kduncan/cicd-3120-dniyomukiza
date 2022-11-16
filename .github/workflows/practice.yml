@@ -2,7 +2,7 @@ name: Practice
 
 on:
 
-  pull:
+  status:
     branches: [main]
 
   workflow_dispatch:
