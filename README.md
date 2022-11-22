@@ -69,4 +69,4 @@ Once your account is set up and you have authenticated you are ready to push you
 + GitHub workflow is a set of actions that will execute when triggered by an event. Example of event is a push to github repo
 + USERNAME and PASSWORD are my custom variables, you can name yours anyhow
 
-## Part III :  Deployment
+## Part III :  Deployment.
