@@ -69,4 +69,29 @@ Once your account is set up and you have authenticated you are ready to push you
 + GitHub workflow is a set of actions that will execute when triggered by an event. Example of event is a push to github repo
 + USERNAME and PASSWORD are my custom variables, you can name yours anyhow
 
-## Part III :  Deployment.
+## Part III :  Deployment
+ + My restart script is supposed to run if a push occurs on my github repo. It has an id which will come into play when you want to access your webhook(ip,listening port/id). Execute command need to knwo where to get a script to run when aa event (in this case a push ) happens.
+ + Creating a listener
+     1. First I downloaded and installed hookdeck from this website https://github.com/hookdeck/hookdeck-cli/releases/tag/v0.5
+     2. I ran the following CLI command 
+              hookdeck listen 8083. A guest account will be created for you if you dont have one yet. This command will prompt you to enter the source of webhook(say github), the the path webhooks will be forwared to(endpoint). Name your connection anyhow you like. After you finish these steps, a webhook URL will be provided for you. 
+              
++ How to installed the webhook on GitHub
+     1. Copy webhook URL provided, then go to your github repo settings, click webhook and paste it. Create a secret and a type of event you want webhook to listen for, then save. On your CLI you will see a success message.
++ How to keep the webhook running if the instance is on
+     I created a service script in /etc/systemd folder and determined which services are prerequisite for my hookdeck service to run
+
++ Description of Webhook task definition file
+  
+
++ Steps to set up a notifier in GitHub or DockerHub
+   1. Click upper right corner on notification bell icon
+   2. under the list of repositories, use the "Manage notifications"
+   3. On the notifications settings page, choose how you receive notifications and on what type of events you want to be notified about 
+   
+## Part IV :  Diagramming
+
+
+
+
+   
